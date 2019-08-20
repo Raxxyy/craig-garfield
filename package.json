@@ -1,0 +1,17 @@
+{
+  "name": "craig",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Raxxy#7027",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.5.1",
+    "dotenv": "^8.1.0",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.0"
+  }
+}
