@@ -19,6 +19,6 @@ const bot = new Client({ disableEveryone: true });
 ["aliases", "commands"].forEach(collection => bot[collection] = new Collection());
 
 // Turning on the handlers.
-["command", "event"].forEach(handler => require(`./src/handlers/${handler}`)(bot));
+["Command", "Event"].forEach(handler => require(`./src/handlers/${handler}`)(bot));
 
 bot.login(discord.env.DISCORD_TOKEN);
