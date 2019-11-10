@@ -21,4 +21,4 @@ const bot = new Client({ disableEveryone: true });
 // Turning on the handlers.
 ["Command", "Event"].forEach(handler => require(`./src/handlers/${handler}`)(bot));
 
-bot.login(discord.env.DISCORD_TOKEN);
+bot.login(process.env.DISCORD_TOKEN);
