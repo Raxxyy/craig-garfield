@@ -19,6 +19,15 @@ module.exports.error = {
         message.channel.send(embed).then(m => m.delete(6000));
     },
 
+    notRightID: (message) => {
+        const embed = new RichEmbed();
+        embed.setAuthor(message.author.username, message.author.displayAvatarURL);
+        embed.setTitle('ERROR: ID NOT ALLOWED');
+        embed.addField('This command can only be used by a select few');
+
+        message.channel.send(embed).then(m => m.delete(6000));
+    },
+
     errorMessage: (message) => {
         message.channel.send('Oopsie, an error happened!');
     },
