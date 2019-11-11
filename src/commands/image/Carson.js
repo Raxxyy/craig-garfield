@@ -16,7 +16,7 @@ module.exports = {
         let User = message.guild.member.id !== bot.user.id;
 
         const embed = new RichEmbed();
-        embed.setColor(message.guild.me.displayHexColor === '#000000' ? '#ffffff' : message.guild.me.displayHexColor);
+        embed.setColor(ops.roleColor);
         embed.setDescription(pages[page-1]);
         embed.setImage(`${pageImage[page-1]}`);
 
@@ -25,8 +25,8 @@ module.exports = {
                 msg.react('➡');
                 const backwardsFilter = (reaction, user) => reaction.emoji.name === '⬅';
                 const forwardsFilter = (reaction, user) => reaction.emoji.name === '➡';
-                const backwards = msg.createReactionCollector(backwardsFilter, { time: 60000 });
-                const forwards = msg.createReactionCollector(forwardsFilter, { time: 60000 });
+                const backwards = msg.createReactionCollector(backwardsFilter, { time: 300000 });
+                const forwards = msg.createReactionCollector(forwardsFilter, { time: 300000 });
                 backwards.on('collect', r => {
                     if (page === 1) return;
                     page--;
