@@ -1,17 +1,25 @@
 {
   "name": "craig",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node Index.js"
   },
   "author": "Raxxy#7027",
   "license": "ISC",
   "dependencies": {
+    "canvas-constructor": "^3.1.0",
     "discord.js": "^11.5.1",
     "dotenv": "^8.1.0",
     "fs": "0.0.1-security",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.0",
+    "opusscript": "0.0.7",
+    "path": "^0.12.7",
+    "reaction-core": "^2.2.0",
+    "some-random-api": "^1.2.0",
+    "spotilocal": "^0.4.4",
+    "superagent": "^5.1.0",
+    "ytdl-core": "^1.0.0"
   }
 }
