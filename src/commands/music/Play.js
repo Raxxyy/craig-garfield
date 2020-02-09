@@ -4,9 +4,9 @@ module.exports = {
     config: {
         name: 'play',
         alias: ['p', 'yt']
-    }
-}, 
-run: asnyc (bot, message, args, ops) => {
+    },
+    
+    run: asnyc (bot, message, args, ops) => {
     
     if (!messag.member.voiceChannel) return message.channel.send('go to vc retard');
     
