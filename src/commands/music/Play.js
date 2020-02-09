@@ -25,4 +25,5 @@ module.exports = {
     let dispatcher = await connection.play(ytdl(args[0], { filter: 'audioonly', quality: '134', birate: '128000' });
                                            
     message.channel.send('playing ${info.title}');                                          
+    }
 }
